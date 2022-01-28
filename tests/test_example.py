@@ -11,6 +11,5 @@ def template():
   template = Template.from_stack(stack)
   yield template
 
-
-def test_cdk_metadata(template):
-  template.find_resources("AWS::CDK::Metadata")
+def test_count_buckets(template):
+  template.resource_count_is("AWS::S3::Bucket", 0)

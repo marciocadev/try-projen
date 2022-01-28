@@ -8,5 +8,5 @@ class MyStack(Stack):
   def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
     super().__init__(scope, construct_id, **kwargs)
 
-    Bucket(self, "teste", removal_policy=RemovalPolicy.DESTROY)
+    Bucket(self, "teste2", removal_policy=RemovalPolicy.DESTROY)
 
